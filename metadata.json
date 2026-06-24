@@ -1,0 +1,6 @@
+{
+  "name": "One Stop Computer Academy",
+  "description": "Professional educational website for One Stop Computer Academy providing technical training for school, college, and diploma students.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
