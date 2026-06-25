@@ -39,13 +39,13 @@ export const ACADEMY_INFO = {
   contact: {
     phone: "8272905444",
     phoneDisplay: "+91 8272905444",
-    phone2: "9123056549",
-    phoneDisplay2: "+91 9123056549",
+    phone2: "9123056547",
+    phoneDisplay2: "+91 9123056547",
     email: "onestopcomputeracademy@gmail.com",
     address: "DD-202, Street-295, Newtown, Action Area-1, Kolkata – 700156",
     city: "Kolkata - 700156",
     whatsappUrl: "https://wa.me/918272905444",
-    whatsappUrl2: "https://wa.me/919123056549",
+    whatsappUrl2: "https://wa.me/919123056547",
   },
   social: {
     facebook: "#",

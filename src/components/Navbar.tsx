@@ -49,31 +49,17 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           
-          {/* Logo Section (Top-Left Placeholder) */}
+          {/* Clean Logo Section */}
           <div className="flex flex-col">
             <a href="#home" className="flex items-center gap-2 group">
-              <div className="relative flex items-center justify-center p-2 rounded-lg bg-brand-orange text-white glow-orange transition-transform duration-300 group-hover:scale-105">
-                <Terminal size={22} className="animate-pulse" />
-              </div>
-              <div className="flex flex-col">
-                <span className="font-display font-extrabold text-lg sm:text-xl tracking-tight leading-none group-hover:text-brand-orange transition-colors duration-200">
-                  ONE STOP
-                </span>
-                <span className="text-[10px] uppercase tracking-wider text-gray-300 font-mono">
-                  Computer Academy
-                </span>
-              </div>
+              <img 
+                src="/logo.jpeg" 
+                alt="One Stop Computer Academy Logo" 
+                className="h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105" 
+              />
             </a>
-            
-            {/* Logo Placeholder Badge - Easily Replaceable Indicator */}
-            <div className="absolute top-12 left-6 sm:left-8 hidden lg:block">
-              <div className="bg-brand-orange/15 text-brand-orange border border-brand-orange/30 text-[9px] px-1.5 py-0.5 rounded font-mono shadow-sm flex items-center gap-1">
-                <Sparkles size={8} />
-                <span>{ACADEMY_INFO.logoText}</span>
-              </div>
-            </div>
           </div>
-
+          
           {/* Desktop Navigation Links */}
           <div className="hidden lg:flex items-center space-x-1">
             {navLinks.map((link) => (
@@ -101,7 +87,7 @@ export default function Navbar() {
             </a>
           </div>
 
-          {/* Mobile Hamburguer Toggle */}
+          {/* Mobile Hamburger Toggle */}
           <div className="flex lg:hidden items-center gap-2">
             <a
               href="#contact"
@@ -150,9 +136,18 @@ export default function Navbar() {
         </div>
 
         <div className="flex flex-col space-y-3">
-          <div className="text-[10px] uppercase font-mono text-brand-orange border-b border-brand-blue-light/60 pb-1 mb-2">
-            Academy Logo Placeholder: "{ACADEMY_INFO.logoText}"
+          {/* --- UPDATED LOGO SECTION --- */}
+          <div className="pb-1 mb-2 border-b border-brand-blue-light/60">
+            <a href="/" onClick={() => setIsOpen(false)} className="inline-block">
+              <img 
+                src="/logo.jpeg" 
+                alt={`${ACADEMY_INFO.logoText} Logo`} 
+                className="h-8 w-auto object-contain" 
+              />
+            </a>
           </div>
+          {/* --- END OF LOGO SECTION --- */}
+
           {navLinks.map((link) => (
             <a
               key={link.id}
@@ -167,16 +162,16 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
+        </div>
           
-          <div className="pt-6">
-            <a
-              href="#contact"
-              onClick={() => setIsOpen(false)}
-              className="w-full bg-brand-orange hover:bg-brand-orange-dark text-white font-semibold py-3 rounded-xl shadow-md transition-colors block text-center"
-            >
-              Contact Us
-            </a>
-          </div>
+        <div className="pt-6">
+          <a
+            href="#contact"
+            onClick={() => setIsOpen(false)}
+            className="w-full bg-brand-orange hover:bg-brand-orange-dark text-white font-semibold py-3 rounded-xl shadow-md transition-colors block text-center"
+          >
+            Contact Us
+          </a>
         </div>
       </div>
     </nav>

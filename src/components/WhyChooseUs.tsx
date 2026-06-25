@@ -107,7 +107,7 @@ export default function WhyChooseUs() {
               <div className="text-xs sm:text-sm text-gray-300 font-mono flex flex-col sm:flex-row gap-2 sm:gap-4">
                 <span>WhatsApp 1: +91 8272905444</span>
                 <span className="hidden sm:inline">|</span>
-                <span>WhatsApp 2: +91 9123056549</span>
+                <span>WhatsApp 2: +91 9123056547</span>
               </div>
             </div>
           </div>
